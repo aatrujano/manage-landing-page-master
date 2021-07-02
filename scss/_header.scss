@@ -1,7 +1,16 @@
 .header{
 
     &__nav{
+        background: $veryLightGray;
         padding: 3rem;
         justify-content: space-between;
+        align-items: center;
+        &-links{
+            
+            span{
+                padding: 0.7rem;
+                color: $darkBlue;
+            }
+        }
     }
 }
