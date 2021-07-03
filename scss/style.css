@@ -18,7 +18,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: gray;
   font-family: 'Be Vietnam', sans-serif;
   font-size: 16px;
 }
@@ -28,11 +27,47 @@ a, a:visited, a:hover {
   color: unset;
 }
 
+h1 {
+  color: #242d52;
+  font-size: 52px;
+}
+
+p {
+  color: #9095a7;
+}
+
 /* DISPLAY */
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-justify-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-justifyCenter {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-alignCenter {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* BUTTONS*/
@@ -42,15 +77,20 @@ button {
   font-size: 16px;
   color: #fafafa;
   border-radius: 50px;
-  padding: 1.4rem 3.2rem 1.2rem 3.2rem;
+  padding: 1.25rem 3.2rem 1.1rem 3.2rem;
   background-color: #f25f3a;
   -webkit-box-shadow: #f25f3a 0px 22px 20px -15px;
           box-shadow: #f25f3a 0px 22px 20px -15px;
 }
 
+.header {
+  background-image: url("/images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 3rem 7rem 3rem 7rem;
+}
+
 .header__nav {
-  background: #fafafa;
-  padding: 3rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

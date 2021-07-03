@@ -13,8 +13,7 @@ html{
 
 body{
     margin: 0;
-    padding: 0;   
-    background: gray; 
+    padding: 0; 
     font-family: 'Be Vietnam', sans-serif;
     font-size: 16px;
 }
@@ -24,10 +23,33 @@ a, a:visited, a:hover {
     color: unset;
 }
 
+h1{
+    color: $darkBlue;
+    font-size: 52px;
+}
+
+p{
+    color: $darkGrayishBlue;
+}
+
 /* DISPLAY */
 
 .flex{
     display: flex;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.flex-justify-sb{
+    justify-content: space-between;
+}
+.flex-justifyCenter{
+    justify-content: center;
+}
+.flex-alignCenter{
+    align-items: center;
 }
 
 /* BUTTONS*/ 
@@ -38,7 +60,7 @@ button{
     font-size: 16px;
     color: $veryLightGray;
     border-radius: 50px;
-    padding: 1.4rem 3.2rem 1.2rem 3.2rem;
+    padding: 1.25rem 3.2rem 1.1rem 3.2rem;
     background-color: $brightRed;
     box-shadow: $brightRed 0px 22px 20px -15px;
 }

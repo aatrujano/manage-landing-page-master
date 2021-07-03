@@ -1,8 +1,9 @@
 .header{
-
+    background-image: url('/images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 3rem 7rem 3rem 7rem;
     &__nav{
-        background: $veryLightGray;
-        padding: 3rem;
         justify-content: space-between;
         align-items: center;
         &-links{
