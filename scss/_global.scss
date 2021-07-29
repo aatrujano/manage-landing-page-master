@@ -23,13 +23,21 @@ a, a:visited, a:hover {
     color: unset;
 }
 
-h1{
-    color: $darkBlue;
-    font-size: 52px;
+h1, h2, h3{
+    color:$darkBlue
+}
+h1{   
+    font-size: 3.25rem;
+    line-height: 4rem;
+}
+h2{
+    font-size: 2.5rem;
+    line-height: 2.875rem;
 }
 
 p{
     color: $darkGrayishBlue;
+    font-size: 16px;
 }
 
 /* DISPLAY */
@@ -52,6 +60,12 @@ p{
     align-items: center;
 }
 
+/*PADDING*/
+
+.lat-padding-10{
+    padding: 0 10rem;
+}
+
 /* BUTTONS*/ 
 
 button{
@@ -63,5 +77,8 @@ button{
     padding: 1.25rem 3.2rem 1.1rem 3.2rem;
     background-color: $brightRed;
     box-shadow: $brightRed 0px 22px 20px -15px;
+    &:hover{
+        cursor: pointer;
+    }
 }
 

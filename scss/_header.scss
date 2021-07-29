@@ -2,7 +2,7 @@
     background-image: url('/images/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
     background-position: right;
-    padding: 3rem 7rem 3rem 7rem;
+    padding: 3rem 10rem 3rem 10rem;
     &__nav{
         justify-content: space-between;
         align-items: center;
@@ -11,6 +11,19 @@
             span{
                 padding: 0.7rem;
                 color: $darkBlue;
+            }
+        }
+    }
+
+    &__hero{
+        padding-top: 8rem;
+        &-text{
+            h1{
+                padding-top: 5rem;                
+            }
+            p{
+                width: 21rem;
+                padding: 2rem 0;
             }
         }
     }

@@ -1,0 +1,80 @@
+.main{
+    &__aboutManage{
+        position: relative;
+        width: 50%;        
+        h2{
+            padding-bottom: 2rem;
+
+        }
+        p{
+            padding-right: 11.85rem;
+        }
+    }
+
+    &__advantages{
+        width: 50%;
+        .container{
+            padding-bottom: 3rem;
+            position: relative;
+            &__marker{
+                span{
+                    display: inline-block;
+                    text-align: center;
+                    width: 3.5rem;
+                    color: $veryLightGray;
+                    padding: .35rem;
+                    background: $brightRed;
+                    border-radius: 20px;
+                }
+            }
+            &__text{
+                padding-left: 1.5rem;
+                h3{
+                    padding-bottom: 1.5rem;
+                }
+            }
+        }        
+    }
+
+    &__testimonials{      
+
+        overflow: hidden;
+
+        h2{
+            text-align: center;
+            padding: 6rem;
+        }
+        .container{
+            width: max-content;
+            position: relative;
+
+            &__testimonial{
+                background: $veryLightGray;
+                width: 29rem;
+                position: relative;
+                margin: .5rem;
+                padding: 3rem 1rem 1rem 1rem;
+                &-avatar{
+                    position: absolute;
+                    top: -2rem;
+                    left: calc(50% - 2rem);
+                    img{
+                        position: relative;
+                        display: block;
+                        margin: auto;
+                        width: 4rem;
+                    }
+                }
+
+                &-name{
+                    text-align: center;
+                }
+
+                &-text{
+                    text-align: center;
+                }
+            }       
+        }
+    }
+}
+

@@ -27,13 +27,23 @@ a, a:visited, a:hover {
   color: unset;
 }
 
-h1 {
+h1, h2, h3 {
   color: #242d52;
-  font-size: 52px;
+}
+
+h1 {
+  font-size: 3.25rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.875rem;
 }
 
 p {
   color: #9095a7;
+  font-size: 16px;
 }
 
 /* DISPLAY */
@@ -70,6 +80,11 @@ p {
           align-items: center;
 }
 
+/*PADDING*/
+.lat-padding-10 {
+  padding: 0 10rem;
+}
+
 /* BUTTONS*/
 button {
   border: none;
@@ -83,11 +98,15 @@ button {
           box-shadow: #f25f3a 0px 22px 20px -15px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .header {
   background-image: url("/images/bg-tablet-pattern.svg");
   background-repeat: no-repeat;
   background-position: right;
-  padding: 3rem 7rem 3rem 7rem;
+  padding: 3rem 10rem 3rem 10rem;
 }
 
 .header__nav {
@@ -102,5 +121,103 @@ button {
 .header__nav-links span {
   padding: 0.7rem;
   color: #242d52;
+}
+
+.header__hero {
+  padding-top: 8rem;
+}
+
+.header__hero-text h1 {
+  padding-top: 5rem;
+}
+
+.header__hero-text p {
+  width: 21rem;
+  padding: 2rem 0;
+}
+
+.main__aboutManage {
+  position: relative;
+  width: 50%;
+}
+
+.main__aboutManage h2 {
+  padding-bottom: 2rem;
+}
+
+.main__aboutManage p {
+  padding-right: 11.85rem;
+}
+
+.main__advantages {
+  width: 50%;
+}
+
+.main__advantages .container {
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.main__advantages .container__marker span {
+  display: inline-block;
+  text-align: center;
+  width: 3.5rem;
+  color: #fafafa;
+  padding: .35rem;
+  background: #f25f3a;
+  border-radius: 20px;
+}
+
+.main__advantages .container__text {
+  padding-left: 1.5rem;
+}
+
+.main__advantages .container__text h3 {
+  padding-bottom: 1.5rem;
+}
+
+.main__testimonials {
+  overflow: hidden;
+}
+
+.main__testimonials h2 {
+  text-align: center;
+  padding: 6rem;
+}
+
+.main__testimonials .container {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+}
+
+.main__testimonials .container__testimonial {
+  background: #fafafa;
+  width: 29rem;
+  position: relative;
+  margin: .5rem;
+  padding: 3rem 1rem 1rem 1rem;
+}
+
+.main__testimonials .container__testimonial-avatar {
+  position: absolute;
+  top: -2rem;
+  left: calc(50% - 2rem);
+}
+
+.main__testimonials .container__testimonial-avatar img {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 4rem;
+}
+
+.main__testimonials .container__testimonial-name {
+  text-align: center;
+}
+
+.main__testimonials .container__testimonial-text {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
