@@ -1,80 +1,107 @@
-.main{
-    &__aboutManage{
+.main {
+  &__aboutManage {
+    position: relative;
+    width: 50%;
+    h2 {
+      padding-bottom: 2rem;
+    }
+    p {
+      padding-right: 11.85rem;
+    }
+  }
+
+  &__advantages {
+    width: 50%;
+    .container {
+      padding-bottom: 3rem;
+      position: relative;
+      &__marker {
+        span {
+          display: inline-block;
+          text-align: center;
+          width: 3.5rem;
+          color: $veryLightGray;
+          padding: 0.35rem;
+          background: $brightRed;
+          border-radius: 20px;
+        }
+      }
+      &__text {
+        padding-left: 1.5rem;
+        h3 {
+          padding-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &__testimonials {
+    padding-bottom: 12rem;
+
+    h2 {
+      position: relative;
+      text-align: center;
+      padding: 6rem;
+      padding-bottom: 4rem;
+    }
+
+    .container {
+      position: relative;
+      padding-top: 2rem;
+      overflow-x: auto;
+      cursor: grab;
+      &__testimonial {
+        background: $veryLightGray;
+        min-width: 29rem;
         position: relative;
-        width: 50%;        
-        h2{
-            padding-bottom: 2rem;
-
-        }
-        p{
-            padding-right: 11.85rem;
-        }
-    }
-
-    &__advantages{
-        width: 50%;
-        .container{
-            padding-bottom: 3rem;
+        left: -2rem;
+        margin: 1rem;
+        padding: 3rem 1rem 2rem 1rem;
+        &-avatar {
+          position: absolute;
+          top: -2rem;
+          left: calc(50% - 2rem);
+          img {
             position: relative;
-            &__marker{
-                span{
-                    display: inline-block;
-                    text-align: center;
-                    width: 3.5rem;
-                    color: $veryLightGray;
-                    padding: .35rem;
-                    background: $brightRed;
-                    border-radius: 20px;
-                }
-            }
-            &__text{
-                padding-left: 1.5rem;
-                h3{
-                    padding-bottom: 1.5rem;
-                }
-            }
-        }        
+            display: block;
+            margin: auto;
+            width: 4rem;
+          }
+        }
+
+        &-name {
+          text-align: center;
+        }
+
+        &-text {
+          text-align: center;
+        }
+      }
     }
 
-    &__testimonials{      
-
-        overflow: hidden;
-
-        h2{
-            text-align: center;
-            padding: 6rem;
-        }
-        .container{
-            width: max-content;
-            position: relative;
-
-            &__testimonial{
-                background: $veryLightGray;
-                width: 29rem;
-                position: relative;
-                margin: .5rem;
-                padding: 3rem 1rem 1rem 1rem;
-                &-avatar{
-                    position: absolute;
-                    top: -2rem;
-                    left: calc(50% - 2rem);
-                    img{
-                        position: relative;
-                        display: block;
-                        margin: auto;
-                        width: 4rem;
-                    }
-                }
-
-                &-name{
-                    text-align: center;
-                }
-
-                &-text{
-                    text-align: center;
-                }
-            }       
-        }
+    button {
+      display: block;
+      margin: auto;
+      margin-top: 5rem;
     }
+  }
+
+  &__simplify {
+    background: $brightRed;
+    background-image: url("../images/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 15rem -6rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    h2 {
+      display: block;
+      width: 30rem;
+      color: $veryPaleRed;
+    }
+    button {
+      background: $veryPaleRed;
+      color: $brightRed;
+      align-self: center;
+    }
+  }
 }
-

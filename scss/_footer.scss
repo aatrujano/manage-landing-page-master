@@ -1,0 +1,40 @@
+.footer {
+  position: relative;
+  background: $veryDarkBlue;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  justify-content: space-between;
+  height: 18.75rem;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__nav {
+    &-list {
+      columns: 2;
+      .listItem {
+        color: $veryLightGray;
+        padding-right: 7rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  &__form {
+    &-input {
+      border: none;
+      font-size: 16px;
+      color: $darkGrayishBlue;
+      border-radius: 50px;
+      padding: 1.1rem 2.7rem 1rem 2.7rem;
+    }
+  }
+  button {
+    box-shadow: none;
+  }
+  p {
+      position: absolute;
+      right: 10rem;
+      bottom: 5rem;
+  }
+}

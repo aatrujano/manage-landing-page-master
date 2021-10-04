@@ -1,84 +1,99 @@
 /* GENERAL */
 
-html{
-    font-size: 100%;
-    box-sizing: border-box;
+html {
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    margin: 0;
-    padding: 0; 
-    font-family: 'Be Vietnam', sans-serif;
-    font-size: 16px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 16px;
 }
 
-a, a:visited, a:hover {
-    text-decoration: none;
-    color: unset;
+ul,
+ol {
+  list-style: none;
 }
 
-h1, h2, h3{
-    color:$darkBlue
-}
-h1{   
-    font-size: 3.25rem;
-    line-height: 4rem;
-}
-h2{
-    font-size: 2.5rem;
-    line-height: 2.875rem;
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: unset;
 }
 
-p{
-    color: $darkGrayishBlue;
-    font-size: 16px;
+h1,
+h2,
+h3 {
+  color: $darkBlue;
+}
+h1 {
+  font-size: 3.25rem;
+  line-height: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+}
+
+p {
+  color: $darkGrayishBlue;
+  font-size: 16px;
 }
 
 /* DISPLAY */
 
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.flex-center{
-    justify-content: center;
-    align-items: center;
+.flex-center {
+  justify-content: center;
+  align-items: center;
 }
-.flex-justify-sb{
-    justify-content: space-between;
+.flex-justify-sb {
+  justify-content: space-between;
 }
-.flex-justifyCenter{
-    justify-content: center;
+.flex-justifyCenter {
+  justify-content: center;
 }
-.flex-alignCenter{
-    align-items: center;
+.flex-alignCenter {
+  align-items: center;
+}
+
+.overflowScroll {
+  overflow: scroll;
 }
 
 /*PADDING*/
 
-.lat-padding-10{
-    padding: 0 10rem;
+.lat-padding-10 {
+  padding-right: 10rem;
+  padding-left: 10rem;
 }
 
-/* BUTTONS*/ 
+/* BUTTONS*/
 
-button{
-    border: none;
-    font-weight: bold;
-    font-size: 16px;
-    color: $veryLightGray;
-    border-radius: 50px;
-    padding: 1.25rem 3.2rem 1.1rem 3.2rem;
-    background-color: $brightRed;
-    box-shadow: $brightRed 0px 22px 20px -15px;
-    &:hover{
-        cursor: pointer;
-    }
+button {
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: $veryLightGray;
+  border-radius: 50px;
+  padding: 1.1rem 2.7rem 1rem 2.7rem;
+  background-color: $brightRed;
+  box-shadow: $brightRed 0px 22px 20px -15px;
+  &:hover {
+    cursor: pointer;
+  }
 }
-
