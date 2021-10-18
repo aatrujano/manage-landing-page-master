@@ -1,30 +1,36 @@
-.header{
-    background-image: url('/images/bg-tablet-pattern.svg');
-    background-repeat: no-repeat;
-    background-position: right;
-    padding: 3rem 10rem 3rem 10rem;
-    &__nav{
-        justify-content: space-between;
-        align-items: center;
-        &-links{
-            
-            span{
-                padding: 0.7rem;
-                color: $darkBlue;
-            }
+.header {
+  background-image: url("/images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  &__nav {
+    justify-content: space-between;
+    align-items: center;
+    &-links {
+      span {
+        padding: 0.7rem;
+      }
+      a {
+        color: $darkBlue;
+        transition: color 200ms ease;
+        &:hover {
+          color: $darkGrayishBlue;
         }
+      }
     }
+  }
 
-    &__hero{
-        padding-top: 8rem;
-        &-text{
-            h1{
-                padding-top: 5rem;                
-            }
-            p{
-                width: 21rem;
-                padding: 2rem 0;
-            }
-        }
+  &__hero {
+    padding-top: 8rem;
+    &-text {
+      h1 {
+        padding-top: 5rem;
+      }
+      p {
+        width: 21rem;
+        padding: 2rem 0;
+      }
     }
+  }
 }
