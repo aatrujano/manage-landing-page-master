@@ -1,0 +1,19 @@
+@media(min-width: 64em) {
+    //styles go here    
+}
+
+$breakPointsUp: ('360': 22.5rem, '481': 30.0625rem, '621': 38.8125em, '731': 45.75em, '805': 50.3125em, '1024': 64em, '1300': 81.25rem, '1400': 87.5em);
+
+$breakPointsDown: ('359': 22.4375rem, '480': 30rem, '620': 38.75em, '730': 45.6875em, '804': 50.25em, '1272': 79.5em, '1299': 81.1875rem, '1399': 87.4375em);
+
+@mixin breakPointUp($size) {
+    @media (min-width: map-get($breakPointsUp , $size )){
+        @content;
+    }
+}
+
+@mixin breakPointDown($size) {
+    @media (max-width: map-get($breakPointsDown , $size )){
+        @content;
+    }
+}
