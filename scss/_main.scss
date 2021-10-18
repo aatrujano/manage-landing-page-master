@@ -99,9 +99,13 @@
       color: $veryPaleRed;
     }
     button {
-      background: $veryPaleRed;
+      background: $veryLightGray;
       color: $brightRed;
       align-self: center;
+      transition: color 400ms ease;
+      &:hover{
+        color: $redButtonHover;
+      }
     }
   }
 }
