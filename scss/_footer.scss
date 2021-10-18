@@ -14,9 +14,16 @@
     &-list {
       columns: 2;
       .listItem {
-        color: $veryLightGray;
         padding-right: 7rem;
         margin-bottom: 1rem;
+
+        a {
+          color: $veryLightGray;
+          transition: color 400ms ease;
+          &:hover {
+            color: $brightRed;
+          }
+        }
       }
     }
   }
@@ -33,8 +40,8 @@
     box-shadow: none;
   }
   p {
-      position: absolute;
-      right: 10rem;
-      bottom: 5rem;
+    position: absolute;
+    right: 10rem;
+    bottom: 5rem;
   }
 }
