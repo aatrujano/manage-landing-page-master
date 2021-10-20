@@ -1,35 +1,52 @@
 .main {
+  &__container{
+    @include breakPointDown('969') {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
   &__aboutManage {
     position: relative;
     width: 50%;
+    margin-right: 5rem;
+    @include breakPointDown('969'){
+      margin: unset;
+      text-align: center;
+      width: unset;
+      p {
+        margin-bottom: 3rem;
+      }
+    }
     h2 {
       padding-bottom: 2rem;
-    }
-    p {
-      padding-right: 11.85rem;
     }
   }
 
   &__advantages {
     width: 50%;
+    @include breakPointDown('969'){
+      width: unset;
+    }
     .container {
       padding-bottom: 3rem;
       position: relative;
-      &__marker {
-        span {
-          display: inline-block;
-          text-align: center;
-          width: 3.5rem;
-          color: $veryLightGray;
-          padding: 0.35rem;
-          background: $brightRed;
-          border-radius: 20px;
+      &__marker{
+        @include breakPointDown('969'){
+          display: none;
         }
-      }
+      }     
       &__text {
         padding-left: 1.5rem;
         h3 {
           padding-bottom: 1.5rem;
+          span{
+            margin-right: 1rem;
+            display: none;
+            @include breakPointDown('969') {
+              display: inline-block;
+            }
+          }
         }
       }
     }
@@ -41,7 +58,7 @@
     h2 {
       position: relative;
       text-align: center;
-      padding: 6rem;
+      padding-top: 6rem;
       padding-bottom: 4rem;
     }
 
@@ -88,22 +105,32 @@
 
   &__simplify {
     background: $brightRed;
-    background-image: url("../images/bg-simplify-section-desktop.svg");
+    background-image: url('../images/bg-simplify-section-desktop.svg');
     background-repeat: no-repeat;
     background-position: 15rem -6rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    @include breakPointDown('969'){
+      background-image: url('../images/bg-simplify-section-mobile.svg');
+      background-position: left;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
     h2 {
       display: block;
-      width: 30rem;
+      max-width: 30rem;
       color: $veryPaleRed;
+      @include breakPointDown('969'){
+        margin-bottom: 3rem;
+      }
     }
     button {
       background: $veryLightGray;
       color: $brightRed;
       align-self: center;
-      transition: color 400ms ease;
-      &:hover{
+      transition: color 200ms ease;
+      &:hover {
         color: $redButtonHover;
       }
     }

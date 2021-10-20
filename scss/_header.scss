@@ -1,9 +1,16 @@
 .header {
-  background-image: url("/images/bg-tablet-pattern.svg");
+  background-image: url('/images/bg-tablet-pattern.svg');
   background-repeat: no-repeat;
-  background-position: right;
+  background-position-x: 47rem;
+  background-position-y: -10rem;
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 8rem;
+  &__nav-links,
+  .navButton {
+    @include breakPointDown('969') {
+      display: none;
+    }
+  }
   &__nav {
     justify-content: space-between;
     align-items: center;
@@ -19,18 +26,60 @@
         }
       }
     }
+    &-burguer {
+      display: none;
+      @include breakPointDown('969') {
+        display: flex;
+        flex-direction: column;
+      }
+      span {
+        background-color: $darkBlue;
+        width: 2.4rem;
+        height: 0.25rem;
+        margin-bottom: 0.45rem;
+      }
+    }
   }
 
   &__hero {
     padding-top: 8rem;
-    &-text {
+    justify-content: space-between;
+    @include breakPointDown('969') {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    &-text {      
+      margin-right: 2rem;
+      min-width: 25.5625rem;
+      @include breakPointDown('969') {
+        margin-right: unset;
+        min-width: unset;
+      }
       h1 {
-        padding-top: 5rem;
+        padding-top: 3rem;
       }
       p {
         width: 21rem;
         padding: 2rem 0;
+        @include breakPointDown('969') {
+          margin: auto;
+        }
       }
+    }
+    &-img {      
+      figure {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &-text,
+    &-img {
+      max-width: 35.40625rem;
+      
     }
   }
 }
