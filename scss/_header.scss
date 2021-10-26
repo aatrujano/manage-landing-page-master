@@ -14,11 +14,15 @@
   &__nav {
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    @include breakPointDown('499') {
+      justify-content: space-around;
+    }
     &-links {
       span {
         padding: 0.7rem;
       }
-      a {
+      .navLink {
         color: $darkBlue;
         transition: color 200ms ease;
         &:hover {
@@ -39,6 +43,33 @@
         margin-bottom: 0.45rem;
       }
     }
+    &-mobileMenu {
+      position: absolute;
+      align-items: center;
+      width: 15rem;
+      top: 3rem;
+      right: 0;
+      background-color: rgb(170, 29, 29);
+      opacity: 0.8;
+      padding: 3.5rem 3rem;
+      transition: opacity 800ms ease-in-out;
+      span {
+        background-color: white;
+        &:not(:last-child) {
+          margin-bottom: 1.2rem;
+        }
+      }
+      &:hover {
+        opacity: 1;
+      }
+      .navLink {
+        color: $darkBlue;
+        transition: color 200ms ease;
+        &:hover {
+          color: $darkGrayishBlue;
+        }
+      }
+    }
   }
 
   &__hero {
@@ -51,7 +82,7 @@
       text-align: center;
     }
 
-    &-text {      
+    &-text {
       margin-right: 2rem;
       min-width: 25.5625rem;
       @include breakPointDown('969') {
@@ -69,7 +100,7 @@
         }
       }
     }
-    &-img {      
+    &-img {
       figure {
         img {
           width: 100%;
@@ -79,7 +110,6 @@
     &-text,
     &-img {
       max-width: 35.40625rem;
-      
     }
   }
 }

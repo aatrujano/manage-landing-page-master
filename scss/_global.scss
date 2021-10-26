@@ -63,6 +63,9 @@ p {
   justify-content: center;
   align-items: center;
 }
+.flex-column{
+  flex-direction: column;
+}
 .flex-justify-sb {
   justify-content: space-between;
 }
