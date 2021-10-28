@@ -20,7 +20,8 @@
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body>
-    <header class="header lat-padding-10">
+    <div class="overlay"></div>
+    <header class="header lat-padding-10">      
       <nav class="header__nav flex">
         <img class="header__nav-img" src="/images/logo.svg" alt="" />
         <div class="header__nav-links">
@@ -31,10 +32,10 @@
           <span><a class="navLink" href="">Community</a></span>
         </div>
         <button class="navButton">Get Started</button>
-        <div class="header__nav-burguer">
+        <div id='hamburguer' class="header__nav-burguer">
           <span></span><span></span><span></span>
         </div>
-        <div class="header__nav-mobileMenu flex flex-column">
+        <div id='mobileMenu' class="header__nav-mobileMenu flex flex-column">
           <span><a class="navLink" href="">Pricing</a></span>
           <span><a class="navLink" href="">Product</a></span>
           <span><a class="navLink" href="">About Us</a></span>
@@ -205,5 +206,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Aldo Trujano Mtz</a>.
     </div>
+    <script src='./js/main.js'></script>
   </body>
 </html>
