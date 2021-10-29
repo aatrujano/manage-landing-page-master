@@ -1,5 +1,5 @@
 .main {
-  &__container{
+  &__container {
     @include breakPointDown('969') {
       flex-direction: column;
       align-items: center;
@@ -10,7 +10,7 @@
     position: relative;
     width: 50%;
     margin-right: 5rem;
-    @include breakPointDown('969'){
+    @include breakPointDown('969') {
       margin: unset;
       text-align: center;
       width: unset;
@@ -25,22 +25,22 @@
 
   &__advantages {
     width: 50%;
-    @include breakPointDown('969'){
+    @include breakPointDown('969') {
       width: unset;
     }
     .container {
       padding-bottom: 3rem;
       position: relative;
-      &__marker{
-        @include breakPointDown('969'){
+      &__marker {
+        @include breakPointDown('969') {
           display: none;
         }
-      }     
+      }
       &__text {
         padding-left: 1.5rem;
         h3 {
           padding-bottom: 1.5rem;
-          span{
+          span {
             margin-right: 1rem;
             display: none;
             @include breakPointDown('969') {
@@ -55,6 +55,27 @@
   &__testimonials {
     padding-bottom: 12rem;
 
+    .sliderDots {
+      display: none;
+      justify-content: center;
+      .dot {
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: solid 1px $brightRed;
+        &.activeDot {
+          background-color: $brightRed;
+        }
+      }
+      > span:not(:last-child) {
+        margin-right: 0.7rem;
+      }
+      @include breakPointDown('600') {
+        display: flex;
+      }
+    }
+
     h2 {
       position: relative;
       text-align: center;
@@ -67,13 +88,49 @@
       padding-top: 2rem;
       overflow-x: auto;
       cursor: grab;
+      @include breakPointDown('600') {
+        justify-content: center;
+        > div {
+          min-width: unset;
+          display: none;
+        }
+        
+      }
+      @include breakPointUp('601') {
+        justify-content: unset;
+        > div {
+          display: block;
+        }
+      }
+      /* width */
+      &::-webkit-scrollbar {
+        height: 10px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: $darkGrayishBlue;
+        border-radius: 5px;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
       &__testimonial {
         background: $veryLightGray;
-        min-width: 29rem;
+        min-width: 27rem;
         position: relative;
-        left: -2rem;
         margin: 1rem;
         padding: 3rem 1rem 2rem 1rem;
+        &.showTest {
+          display: block;
+        }
         &-avatar {
           position: absolute;
           top: -2rem;
@@ -110,7 +167,7 @@
     background-position: 15rem -6rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    @include breakPointDown('969'){
+    @include breakPointDown('969') {
       background-image: url('../images/bg-simplify-section-mobile.svg');
       background-position: left;
       flex-direction: column;
@@ -121,7 +178,7 @@
       display: block;
       max-width: 30rem;
       color: $veryPaleRed;
-      @include breakPointDown('969'){
+      @include breakPointDown('969') {
         margin-bottom: 3rem;
       }
     }
