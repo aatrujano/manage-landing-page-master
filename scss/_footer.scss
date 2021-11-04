@@ -79,10 +79,11 @@
         width: 15.625rem;
       }
     }
+    &-button {
+      box-shadow: none;
+    }
   }
-  button {
-    box-shadow: none;
-  }
+  
   p {
     position: absolute;
     right: 10rem;

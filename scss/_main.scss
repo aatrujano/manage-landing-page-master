@@ -89,6 +89,7 @@
       overflow-x: auto;
       cursor: grab;
       @include breakPointDown('600') {
+        cursor: default;
         justify-content: center;
         > div {
           min-width: unset;
